@@ -1,0 +1,21 @@
+.content {
+  padding: 20px 24px;
+  overflow: hidden;
+}
+
+.content__title {
+  color: $main-black;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.content__text {
+  padding-top: 4px;
+
+  color: $color-text;
+
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+}

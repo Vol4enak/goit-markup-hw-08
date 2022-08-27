@@ -1,0 +1,19 @@
+.page-header {
+  border-bottom: 1px solid #ececec;
+  z-index: 1;
+}
+
+.page-header__container {
+  // @extend %aligh;
+  // @extend %container;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+}
+
+.page-header__nav {
+  // @extend %aligh;
+  @media screen and (min-width: 480px) {
+     
+    }
+}

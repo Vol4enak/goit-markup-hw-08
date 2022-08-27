@@ -1,0 +1,27 @@
+.connect {
+  // display: flex;
+  // flex-direction: column;
+
+  padding-top: 12px;
+  padding-bottom: 40px;
+}
+
+.connect__icon-link {
+  background-color: #45454f;
+}
+
+.connect__icon-icon {
+  fill: $main-white;
+}
+
+.connect__title {
+  display: block;
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: start;
+  color: $main-white;
+}

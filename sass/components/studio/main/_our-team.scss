@@ -1,0 +1,38 @@
+/* our-team */
+
+.our-team {
+  padding: 94px 0;
+  background-color: $btn-color;
+}
+
+.team-list {
+  // display: flex;
+  // justify-content: center;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+.team-list__item {
+  box-shadow:$bgc-shaw;
+  background-color: $main-white;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-list__names {
+  padding-top: 30px;
+  margin-bottom: 10px;
+
+  color: $main-black;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-list__speciality {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}

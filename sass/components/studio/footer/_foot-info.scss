@@ -1,0 +1,31 @@
+/* foot-info */
+
+.foot-info {
+  padding: 60px 0;
+  background-color: $hero-color;
+}
+
+.foot-info__block {
+  // display: flex;
+}
+
+.foot-info__link {
+  text-decoration: none;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: $main-white;
+}
+
+.foot-info__feedback {
+  //  display: flex;
+  //  flex-direction: column;
+  gap: 9px;
+  margin: 0;
+}
+
+.foot-info--color {
+  color: rgba(255, 255, 255, 0.6);
+}

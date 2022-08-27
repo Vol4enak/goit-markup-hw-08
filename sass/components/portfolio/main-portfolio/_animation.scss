@@ -1,0 +1,35 @@
+// animation
+
+.animation {
+  position: relative;
+  overflow: hidden;
+}
+
+.animation__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(101%);
+  transition: transform 250ms $cubic;
+
+  .galery__link--hover:hover &,
+  .galery__link--hover:focus & {
+    transform: translateY(0);
+  }
+}
+
+.animation__text {
+  padding: 63px 24px;
+  text-align: start;
+
+  font-size: 18px;
+  line-height: 1.56;
+  /* or 156% */
+
+  letter-spacing: 0.03em;
+
+  color: $main-white;
+}

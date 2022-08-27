@@ -1,0 +1,60 @@
+/* check-form */
+
+.check-form {
+  padding-left: 52px;
+  padding-right: 52px;
+}
+
+.check-form__policy {
+  display: block;
+  margin-top: 20px;
+  padding-left: 25px;
+}
+
+.check-form__box {
+  appearance: none;
+  position: absolute;
+}
+
+.check-form__icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -23px;
+  margin-top: 3px;
+  border: 2px solid $main-black;
+  border-radius: 2px;
+  transition: background-color 250ms $cubic,
+    border 250ms $cubic;
+
+  .check-form__box--checked:checked + & {
+    background-color: $main-blue;
+    border: 2px solid $main-blue;
+  }
+}
+
+.check-form__link {
+  color: $main-blue;
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+}
+
+.check-form__text {
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+}
+
+.block__button{
+  display: flex;
+  justify-content: center;
+ 
+   align-items: center;
+  margin-top: 30px;
+  cursor: pointer;  
+}

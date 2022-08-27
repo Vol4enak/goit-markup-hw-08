@@ -1,0 +1,48 @@
+/* icons-block */
+
+.icons-block {
+  width: 206px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* icon-list */
+
+.icon-list {
+  margin-top: 16px;
+  padding-bottom: 30px;
+  gap: 10px;
+  // display: flex;
+}
+
+.icon-list__item {
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+}
+
+.icon-list__link {
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  transition: background-color 250ms $cubic;
+  &--hover:hover,
+  &--hover:focus {
+    background-color: $main-blue;
+  }
+}
+
+.icon-list__icon {
+  fill: $color-icon;
+  transition: fill 250ms $cubic;
+
+  .icon-list__link--hover:hover &,
+  .icon-list__link--hover:focus & {
+    fill: $main-white;
+  }
+}

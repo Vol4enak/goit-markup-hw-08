@@ -1,0 +1,39 @@
+/* feedback */
+
+.feedback {
+    // display: flex;
+    margin-left: auto;
+    gap: 50px;
+    
+}
+
+.feedback__link {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: 0.02em;
+    transition: color 250ms $cubic;
+    text-decoration: none;
+    color: $color-text;
+
+    &--animation:hover,
+    &--animation:focus{
+        color: $main-blue;
+    }
+}
+
+.feedback--icon {
+    margin-right: 10px;
+    vertical-align: middle;
+    fill: $color-icon;
+    transition: fill 250ms $cubic;
+
+    .feedback__link--animation:hover &,
+    .feedback__link--animation:focus &{
+    fill:$main-blue;
+}
+    }
+
+
+

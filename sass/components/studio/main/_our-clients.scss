@@ -1,0 +1,42 @@
+/* our-clients */
+
+.our-clients {
+  padding: 94px 0;
+}
+
+.company-list {
+  // display: flex;
+  gap: 30px;
+}
+
+.company-list__item {
+  // display: flex;
+  // width: calc((100% - 150px) / 6);
+  height: 92px;
+}
+
+.company-list__link {
+  width: 170px;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: border 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $main-blue;
+  }
+}
+
+.company-list_icon {
+  fill: $color-icon;
+  transition: fill 250ms $cubic;
+
+  .company-list__link:hover &,
+  .company-list__link:focus & {
+    fill: $main-blue;
+  }
+}

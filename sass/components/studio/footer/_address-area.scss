@@ -1,0 +1,26 @@
+/* address-area */
+
+.address-area {
+  font-style: normal;
+  margin-right: 70px;
+}
+
+.address-area__street {
+  margin-top: 20px;
+  margin-bottom: 9px;
+  color: $main-white;
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.address-area__link {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms $cubic;
+}
