@@ -3,6 +3,9 @@
 .our-team {
   padding: 60px 0;
   background-color: $btn-color;
+   @media screen and (min-width:1200px){
+    padding: 94px 0;
+  }
 }
 
 .team-list {

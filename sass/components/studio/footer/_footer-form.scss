@@ -1,7 +1,7 @@
 /* footer-form */
 
 .footer-form__input {
-  
+  width: 358px;
   height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -30,12 +30,25 @@
 
 
 .footer-form__button {
+  
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  gap: 10px;
+  
+@media screen and (min-width:1200px) {
+margin: 0;
+margin-left: 12px;
+}
 
   cursor: pointer;
-  
-  
+ 
+}
+
+.footer-form__dox{
+@media screen and (min-width:1200px) {
+  display: flex;
+  margin-top: 0;
+}
 }

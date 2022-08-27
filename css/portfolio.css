@@ -551,6 +551,10 @@ address {
   color: #2196f3;
 }
 
+.feedback__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 .feedback--icon {
   margin-right: 10px;
   vertical-align: middle;
@@ -784,11 +788,13 @@ address {
   color: white;
 }
 
-.footer-link {
-  display: block;
+@media screen and (max-width: 1199px) {
+  .footer-link {
+    display: block;
+  }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .foot-info__block {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -799,6 +805,14 @@ address {
         -ms-flex-align: baseline;
             align-items: baseline;
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .foot-info__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -819,7 +833,13 @@ address {
 }
 
 .foot-info__feedback {
-  gap: 9px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0;
 }
 
@@ -827,10 +847,23 @@ address {
   color: rgba(255, 255, 255, 0.6);
 }
 
+@media screen and (min-width: 1200px) {
+  .foot-info-boxs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 /* address-area */
 .address-area {
   font-style: normal;
-  text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .address-area {
+    text-align: center;
+  }
 }
 
 .address-area__street {
@@ -873,6 +906,14 @@ address {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .connect {
+    padding: 0;
+    margin-right: 0;
+    margin-left: 70px;
+  }
+}
+
 .connect__icon-link {
   background-color: #45454f;
 }
@@ -893,8 +934,16 @@ address {
 }
 
 /* subscribe */
-.subscribe {
-  text-align: center;
+@media screen and (max-width: 1199px) {
+  .subscribe {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    margin-left: 93px;
+  }
 }
 
 .subscribe__bold {
@@ -911,6 +960,7 @@ address {
 
 /* footer-form */
 .footer-form__input {
+  width: 358px;
   height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -988,6 +1038,23 @@ address {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 20px;
+  gap: 10px;
   cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form__button {
+    margin: 0;
+    margin-left: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form__dox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 0;
+  }
 }
 /*# sourceMappingURL=portfolio.css.map */

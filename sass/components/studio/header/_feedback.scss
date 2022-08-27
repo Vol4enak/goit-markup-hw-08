@@ -12,6 +12,7 @@
    @media screen and (min-width: 1200px) {
     display: flex;
     gap: 50px;
+    
   }
 }
 
@@ -29,6 +30,13 @@
   &--animation:focus {
     color: $main-blue;
   }
+  
+}
+
+.feedback__item{
+  &:not(:last-child){
+      margin-bottom: 10px;
+    }
 }
 
 .feedback--icon {

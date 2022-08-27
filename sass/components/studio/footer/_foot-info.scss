@@ -17,16 +17,21 @@
 }
 
 .footer-link{
-  display: block;
+  @media screen and (max-width:1199px ) {
+    display: block;
+  }
 }
-
 .foot-info__block{
-  @media screen and (min-width:768px) {
+  @media screen and (min-width:768px) and (max-width: 1199px) {
     display: flex;
     justify-content: space-around;
     align-items:baseline;
     margin-bottom: 60px;
   }
+@media screen and (min-width:1200px){
+  display: flex;
+}
+
 }
 
 .feedback-foot {
@@ -46,12 +51,17 @@
 }
 
 .foot-info__feedback {
-  //  display: flex;
-  //  flex-direction: column;
-  gap: 9px;
+  display: flex;
+  flex-direction: column;
   margin: 0;
 }
 
 .foot-info--color {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.foot-info-boxs{
+@media screen and (min-width: 1200px) {
+  display: flex;
+}
 }

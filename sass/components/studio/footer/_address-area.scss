@@ -2,7 +2,9 @@
 
 .address-area {
   font-style: normal;
+@media screen and (max-width:1199px) {
   text-align: center;
+}
 }
 
 .address-area__street {

@@ -10,6 +10,11 @@
     margin-right: 0;
     margin-left: 0;
   }
+   @media screen and (min-width: 1200px) {
+    padding: 0;
+    margin-right: 0;
+    margin-left: 70px;
+  }
 }
 
 .connect__icon-link {
