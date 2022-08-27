@@ -19,6 +19,23 @@
   color: $main-white;
 }
 
+.feedback-foot{
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: 0.02em;
+    transition: color 250ms $cubic;
+    text-decoration: none;
+    color: $color-text;
+
+    &--animation:hover,
+    &--animation:focus{
+        color: $main-blue;
+    }
+}
+
+
 .foot-info__feedback {
   //  display: flex;
   //  flex-direction: column;

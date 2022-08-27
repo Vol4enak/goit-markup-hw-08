@@ -4,7 +4,9 @@
     // display: flex;
     margin-left: auto;
     gap: 50px;
-    
+    @media screen and (max-width: 767px ) {
+        display: none;
+    }
 }
 
 .feedback__link {

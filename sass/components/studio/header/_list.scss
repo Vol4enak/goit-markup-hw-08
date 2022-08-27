@@ -4,6 +4,9 @@
   // display: flex;
   margin-left: 93px;
   column-gap: 50px;
+  @media screen and (max-width: 767px ) {
+        display: none;
+    }
 }
 
 .list__link {

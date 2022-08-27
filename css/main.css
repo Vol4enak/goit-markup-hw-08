@@ -351,6 +351,12 @@ address {
           column-gap: 50px;
 }
 
+@media screen and (max-width: 767px) {
+  .list {
+    display: none;
+  }
+}
+
 .list__link {
   display: block;
   padding: 30px 0;
@@ -378,6 +384,12 @@ address {
 .feedback {
   margin-left: auto;
   gap: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .feedback {
+    display: none;
+  }
 }
 
 .feedback__link {
@@ -747,6 +759,12 @@ address {
   padding-bottom: 94px;
 }
 
+@media screen and (max-width: 767px) {
+  .our-skills {
+    display: none;
+  }
+}
+
 .our-skills__title {
   margin-bottom: 50px;
   color: #212121;
@@ -914,6 +932,22 @@ address {
   color: white;
 }
 
+.feedback-foot {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 0.02em;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  color: #757575;
+}
+
+.feedback-foot--animation:hover, .feedback-foot--animation:focus {
+  color: #2196f3;
+}
+
 .foot-info__feedback {
   gap: 9px;
   margin: 0;
@@ -973,20 +1007,7 @@ address {
 }
 
 /* subscribe */
-.subscribe {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-left: 93px;
-  padding-top: 12px;
-}
-
 .subscribe__bold {
-  margin-bottom: 20px;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -998,15 +1019,12 @@ address {
 
 /* footer-form */
 .footer-form__input {
-  width: 358px;
-  height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: white;
-  padding-left: 16px;
 }
 
 .footer-form__input::-webkit-input-placeholder {
@@ -1060,22 +1078,10 @@ address {
 }
 
 .footer-form__dox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   /* align-items: center; */
 }
 
 .footer-form__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-top: 0;
   margin-left: 12px;
   cursor: pointer;
