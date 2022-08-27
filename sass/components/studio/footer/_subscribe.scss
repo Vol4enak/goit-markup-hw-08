@@ -5,9 +5,10 @@
   // flex-direction: column;
   // margin-left: 93px;
   // padding-top: 12px;
+  text-align: center;
 }
 .subscribe__bold {
-  // margin-bottom: 20px;
+  display: inline-block;
 
   font-style: normal;
   font-weight: 700;
@@ -15,6 +16,8 @@
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  
+  margin-bottom: 20px;
 
   color: #ffffff;
 }

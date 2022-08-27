@@ -1,41 +1,44 @@
 /* feedback */
 
 .feedback {
-    // display: flex;
+  
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: block;
     margin-left: auto;
+  }
+   @media screen and (min-width: 1200px) {
+    display: flex;
     gap: 50px;
-    @media screen and (max-width: 767px ) {
-        display: none;
-    }
+  }
 }
 
 .feedback__link {
-    font-family: "Roboto";
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.43;
-    letter-spacing: 0.02em;
-    transition: color 250ms $cubic;
-    text-decoration: none;
-    color: $color-text;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 0.02em;
+  transition: color 250ms $cubic;
+  text-decoration: none;
+  color: $color-text;
 
-    &--animation:hover,
-    &--animation:focus{
-        color: $main-blue;
-    }
+  &--animation:hover,
+  &--animation:focus {
+    color: $main-blue;
+  }
 }
 
 .feedback--icon {
-    margin-right: 10px;
-    vertical-align: middle;
-    fill: $color-icon;
-    transition: fill 250ms $cubic;
+  margin-right: 10px;
+  vertical-align: middle;
+  fill: $color-icon;
+  transition: fill 250ms $cubic;
 
-    .feedback__link--animation:hover &,
-    .feedback__link--animation:focus &{
-    fill:$main-blue;
+  .feedback__link--animation:hover &,
+  .feedback__link--animation:focus & {
+    fill: $main-blue;
+  }
 }
-    }
-
-
-

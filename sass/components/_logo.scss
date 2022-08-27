@@ -1,16 +1,20 @@
 /* logo */
 
-.logo-link{
-    text-decoration: none;
-    font-family: "Raleway";
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: $main-black;
+.logo-link {
+  display: inline-block;
 
+  text-decoration: none;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+
+  color: $main-black;
+  vertical-align:bottom;
+  padding: 16px 0;
 }
 
- .logo-link--blue {
+.logo-link--blue {
   color: $main-blue;
 }

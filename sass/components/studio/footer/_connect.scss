@@ -1,9 +1,15 @@
 .connect {
-  // display: flex;
-  // flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-  padding-top: 12px;
-  padding-bottom: 40px;
+  padding: 60px 0;
+  margin-right: auto;
+  margin-left: auto;
+  @media screen and (min-width: 768px) {
+    padding: 0;
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 .connect__icon-link {
@@ -16,12 +22,12 @@
 
 .connect__title {
   display: block;
-  margin: 0;
 
+  margin-bottom: 20px;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-align: start;
+  text-align: center;
   color: $main-white;
 }

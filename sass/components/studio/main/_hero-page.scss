@@ -1,30 +1,69 @@
 /* main-page */
 
 .hero-page {
-  // max-width: 1600px;
-  // max-height: 600px;
+  max-width: 480px;
+  max-height: 400px;
   margin-left: auto;
   margin-right: auto;
-  background-image: $gradient, url("../img/team.jpg");
+  background-image: $gradient, url("../img/mobile.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   background-color: $hero-color;
-  padding: 200px 0;
+  padding: 118px 0;
 
   z-index: 1;
 }
 
+@media (min-resolution: 2dppx) {
+  .hero-page {
+    background-image: $gradient, url("../img/mobile-x2.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-page {
+    background-image: $gradient, url("../img/tablet.jpg");
+    max-width: 768px;
+  }
+  @media (min-resolution: 2dppx) {
+    .hero-page {
+      background-image: $gradient, url("../img/tablet-x2.jpg");
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-page {
+    background-image: $gradient, url("../img/desktop.jpg");
+    max-width: 1600px;
+    max-height: 600px;
+    padding: 200px 0;
+  }
+  @media (min-resolution: 2dppx) {
+    .hero-page {
+      background-image: $gradient, url("../img/desktop-x2.jpg");
+    }
+  }
+}
+
 .hero-page__title {
-  // width: 700px;
+  width: 360px;
   margin: 0 auto;
   color: $main-white;
 
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.35;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: calc(60px / 44px);
+    width: 696px;
+  }
 }
 
 .hero-page__button {

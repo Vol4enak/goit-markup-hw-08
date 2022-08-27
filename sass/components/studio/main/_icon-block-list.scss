@@ -12,19 +12,19 @@
   margin-top: 16px;
   padding-bottom: 30px;
   gap: 10px;
-  // display: flex;
+  display: flex;
 }
 
 .icon-list__item {
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .icon-list__link {
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   width: 44px;
   height: 44px;
@@ -45,4 +45,9 @@
   .icon-list__link--hover:focus & {
     fill: $main-white;
   }
+}
+
+.icon-list__connect {
+  padding: 0;
+  margin: 0;
 }

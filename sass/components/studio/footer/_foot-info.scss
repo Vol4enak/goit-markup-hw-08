@@ -5,36 +5,45 @@
   background-color: $hero-color;
 }
 
-.foot-info__block {
-  // display: flex;
-}
-
 .foot-info__link {
   text-decoration: none;
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
   letter-spacing: 0.03em;
   color: $main-white;
 }
 
-.feedback-foot{
-    font-family: "Roboto";
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.43;
-    letter-spacing: 0.02em;
-    transition: color 250ms $cubic;
-    text-decoration: none;
-    color: $color-text;
-
-    &--animation:hover,
-    &--animation:focus{
-        color: $main-blue;
-    }
+.footer-link{
+  display: block;
 }
 
+.foot-info__block{
+  @media screen and (min-width:768px) {
+    display: flex;
+    justify-content: space-around;
+    align-items:baseline;
+    margin-bottom: 60px;
+  }
+}
+
+.feedback-foot {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 0.02em;
+  transition: color 250ms $cubic;
+  text-decoration: none;
+  color: $color-text;
+
+  &--animation:hover,
+  &--animation:focus {
+    color: $main-blue;
+  }
+}
 
 .foot-info__feedback {
   //  display: flex;
