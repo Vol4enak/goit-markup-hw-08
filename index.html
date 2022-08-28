@@ -36,36 +36,37 @@
                         </a>
                     </li>
                 </ul>
-                <button class="page-header-btn" type="button" js-open-menu>
+                <button class="page-header-btn" type="button" js-open-menu aria-label="открыть навигацию">
                     <svg class="page-header_icon" width="40" height="40" aria-label="Переключатель мобильного меню">
                         <use href="./img/symbol-defs.svg#icon-menu"></use>
                     </svg>
                 </button>
             </nav>
-        <ul class="feedback ">
-            <li class="feedback__item">
-                <a class="feedback__link feedback__link--animation" href="mailto:info@devstudio.com">
-                    <svg class="feedback--icon" width="16" height="12">
-                        <use href="./img/symbol-defs.svg#icon-envelope"></use>
-                    </svg>
-                    info@devstudio.com</a>
-            </li>
-            <li class="feedback__item">
-                <a class="feedback__link feedback__link--animation" href="tel:+380961111111">
-                    <svg class="feedback--icon" width="10" height="16">
-                        <use href="./img/symbol-defs.svg#icon-smartphone"></use>
-                    </svg>
-                    +38 096 111 11 11</a>
-            </li>
-        </ul>
+            <ul class="feedback ">
+                <li class="feedback__item">
+                    <a class="feedback__link feedback__link--animation" href="mailto:info@devstudio.com">
+                        <svg class="feedback--icon" width="16" height="12">
+                            <use href="./img/symbol-defs.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com</a>
+                </li>
+                <li class="feedback__item">
+                    <a class="feedback__link feedback__link--animation" href="tel:+380961111111">
+                        <svg class="feedback--icon" width="10" height="16">
+                            <use href="./img/symbol-defs.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11</a>
+                </li>
+            </ul>
 
             <div class="menu-container backdrop__is--hidden" js-menu-container>
-                <button class="mobile__button--close backdrop__button--close-hover" type="button" js-close-menu>
-                    <svg class="backdrop__icon--close" width="18" height="18">
-                        <use href="./img/symbol-defs.svg#icon-close-black"></use>
-                    </svg>
-                </button>
-                <div class="modile-menu">
+
+                <div class="mobile-menu">
+                    <button class="mobile__button--close backdrop__button--close-hover" type="button" js-close-menu aria-label="закрыть навигацию >
+                        <svg class="backdrop__icon--close" width="18" height="18">
+                            <use href="./img/symbol-defs.svg#icon-close-black"></use>
+                        </svg>
+                    </button>
                     <ul class="mobile-list">
                         <li class="mobile-list__item">
                             <a class="mobile-list__link mobile-list__link--current" href="index.html">Студія</a>
@@ -81,6 +82,31 @@
                             </a>
                         </li>
                     </ul>
+                    <ul class="mobile-feedback ">
+                        <li class="mobile-feedback__item">
+                            <a class="mobile-feedback__link " href="mailto:info@devstudio.com">
+
+                                info@devstudio.com</a>
+                        </li>
+                        <li class="mobile-feedback__item">
+                            <a class="mobile-feedback__link-pnone " href="tel:+380961111111">
+                                +38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                    <ul class="mobile-masage">
+                        <li class="mobile-masage_item">
+                            <a href="" class="mobile-masage_link">Instagram</a>
+                        </li>
+                        <li class="mobile-masage_item">
+                            <a href="" class="mobile-masage_link">Twitter</a>
+                        </li>
+                        <li class="mobile-masage_item">
+                            <a href="" class="mobile-masage_link">Facebook</a>
+                        </li>
+                        <li class="mobile-masage_item">
+                            <a href="" class="mobile-masage_link">LinkedIn</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -92,10 +118,10 @@
         <section class="hero-page">
             <div class="container">
                 <h1 class="hero-page__title">Ефективні рішення для вашого бізнесу</h1>
-                <button data-modal-open class="button hero-page__button" type="button">Замовити послугу</button>
+                <button data-modal-open class="button hero-page__button" type="button" aria-label="Заказать услугу" >Замовити послугу</button>
                 <div class="backdrop backdrop__is--hidden" data-modal>
                     <div class="backdrop__modal">
-                        <button class="backdrop__button--close backdrop__button--close-hover" data-modal-close>
+                        <button class="backdrop__button--close backdrop__button--close-hover" data-modal-close aria-label="Закрыть модальное окно">
                             <svg class="backdrop__icon--close" width="18" height="18">
                                 <use href="./img/symbol-defs.svg#icon-close-black"></use>
                             </svg>
@@ -148,7 +174,7 @@
                                 <span class="check-form__text"> Погоджуюся з розсилкою та приймаю </span>
                                 <a class="check-form__link" href="">Умови договору</a>
                             </label>
-                            <button type="submit" class="button block__button">Відправити</button>
+                            <button type="submit" class="button block__button" aria-label="отправить заявку">Відправити</button>
                         </form>
 
 
@@ -252,7 +278,9 @@
                 <h2 class="title">Наша команда</h2>
                 <ul class="team-list">
                     <li class="team-list__item">
+
                         <img src="./img/first-guy.jpg" class="team__person" alt="Игорь Демьяненко">
+
                         <h3 class="team-list__names">Игорь Демьяненко</h3>
                         <p class="team-list__speciality">Product Designer</p>
                         <div class="icons-block">
@@ -289,7 +317,9 @@
                         </div>
                     </li>
                     <li class="team-list__item">
+
                         <img src="./img/girl.jpg" alt="Ольга Репина" class="team__person">
+
                         <h3 class="team-list__names">Ольга Репина</h3>
                         <p class="team-list__speciality">Frontend Developer</p>
                         <div class="icons-block">
@@ -326,7 +356,9 @@
                         </div>
                     </li>
                     <li class="team-list__item">
+
                         <img src="./img/second-guy.jpg" alt="Николай Тарасов" class="team__person">
+
                         <h3 class="team-list__names">Николай Тарасов</h3>
                         <p class="team-list__speciality">Marketing</p>
                         <div class="icons-block">
@@ -363,7 +395,9 @@
                         </div>
                     </li>
                     <li class="team-list__item">
+
                         <img src="./img/third-guy.jpg" alt="Михаил Ермаков" class="team__person">
+
                         <h3 class="team-list__names">Михаил Ермаков</h3>
                         <p class="team-list__speciality">UI Designer</p>
                         <div class="icons-block">
@@ -523,7 +557,7 @@
                             <label class="footer-form__label">
                                 <input type="email" placeholder="E-mail" class="footer-form__input">
                             </label>
-                            <button type="submit" class="button footer-form__button">
+                            <button type="submit" class="button footer-form__button" aria-label="Подписаться на телеграм">
                                 Підписатися
                                 <svg class="footer-form__icon" width="24" height="24">
                                     <use href="./img/symbol-defs.svg#icon-telegram"></use>
