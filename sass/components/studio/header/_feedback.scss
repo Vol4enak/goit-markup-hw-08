@@ -34,9 +34,12 @@
 }
 
 .feedback__item{
-  &:not(:last-child){
+  @media screen and (max-width:1199px) {
+    &:not(:last-child){
       margin-bottom: 10px;
     }
+  }
+  
 }
 
 .feedback--icon {

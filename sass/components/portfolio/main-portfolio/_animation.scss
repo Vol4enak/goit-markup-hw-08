@@ -33,3 +33,12 @@
 
   color: $main-white;
 }
+
+
+.animation__img{
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 294px;
+  }
+}

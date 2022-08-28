@@ -1,10 +1,24 @@
-
 .button-list {
   display: flex;
+
+   @media screen and (max-width: 767px) {
+  flex-wrap: wrap;
+  width: 400px;
+   }
+    @media screen and (min-width: 767px) {
   justify-content: center;
+   }
 }
-.button-list {
-  gap: 8px;
+
+.button-list__item {
+  &:nth-child(-n + 4) {
+    margin-right: 8px;
+  }
+  @media screen and (max-width: 767px) {
+    &:nth-child(n + 4) {
+      margin-top: 15px;
+    }
+  }
 }
 
 .button-list__button {

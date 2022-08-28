@@ -35,7 +35,6 @@
 .list__link--current {
   position: relative;
   color: $main-blue;
-
   &::after {
     content: "";
     position: absolute;

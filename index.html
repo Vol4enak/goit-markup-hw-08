@@ -37,12 +37,10 @@
                     </li>
                 </ul>
                 <button class="page-header-btn">
-                    <svg class="page-header_icon" width="40" height="40">
+                    <svg class="page-header_icon" width="40" height="40" aria-label="Переключатель мобильного меню">
                         <use href="./img/symbol-defs.svg#icon-menu"></use>
                     </svg>
                 </button>
-
-
             </nav>
             <ul class="feedback ">
                 <li class="feedback__item">
@@ -60,6 +58,16 @@
                         +38 096 111 11 11</a>
                 </li>
             </ul>
+            
+            <!-- <div class="menu-container">
+                <button class="backdrop__button--close backdrop__button--close-hover" js-close-menu>
+                    <svg class="backdrop__icon--close" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-close-black"></use>
+                    </svg>
+                </button>
+            </div> -->
+        </div>
+        </div>
         </div>
     </header>
 
@@ -111,20 +119,20 @@
                                         name="entertext" rows="5" placeholder="Введіть текст" id="com"></textarea>
                                 </label>
                             </div>
+                        </form>
 
-
-                            <form class="check-form">
-                                <label for="checkbox" class="check-form__policy">
-                                    <input type="checkbox" class="check-form__box check-form__box--checked" name="pick"
-                                        id="checkbox">
-                                    <svg class="check-form__icon" width="16" height="15">
-                                        <use href="./img/symbol-defs.svg#icon-icon-check"></use>
-                                    </svg>
-                                    <span class="check-form__text"> Погоджуюся з розсилкою та приймаю </span>
-                                    <a class="check-form__link" href="">Умови договору</a>
-                                </label>
-                                <button type="submit" class="button block__button">Відправити</button>
-                            </form>
+                        <form class="check-form">
+                            <label for="checkbox" class="check-form__policy">
+                                <input type="checkbox" class="check-form__box check-form__box--checked" name="pick"
+                                    id="checkbox">
+                                <svg class="check-form__icon" width="16" height="15">
+                                    <use href="./img/symbol-defs.svg#icon-icon-check"></use>
+                                </svg>
+                                <span class="check-form__text"> Погоджуюся з розсилкою та приймаю </span>
+                                <a class="check-form__link" href="">Умови договору</a>
+                            </label>
+                            <button type="submit" class="button block__button">Відправити</button>
+                        </form>
 
 
                     </div>
@@ -511,6 +519,7 @@
         </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/modile-menu.js"></script>
 </body>
 
 </html>
