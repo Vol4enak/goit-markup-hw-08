@@ -48,7 +48,6 @@
 }
 
 .hero-page__title {
-  width: 360px;
   margin: 0 auto;
   color: $main-white;
 
@@ -58,6 +57,13 @@
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media screen and (min-width: 320px) and (max-width: 479px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 480px) {
+    width: 360px;
+  }
 
   @media screen and (min-width: 1200px) {
     font-size: 44px;

@@ -1,24 +1,38 @@
 .button-list {
   display: flex;
-
-   @media screen and (max-width: 767px) {
-  flex-wrap: wrap;
-  width: 400px;
-   }
-    @media screen and (min-width: 767px) {
-  justify-content: center;
-   }
+  @media screen and (min-width: 320px) and (max-width: 489px) {
+    flex-wrap: wrap;
+    max-width: 300px;
+  }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    flex-wrap: wrap;
+    width: 400px;
+  }
+  @media screen and (min-width: 767px) {
+    justify-content: center;
+  }
 }
 
 .button-list__item {
-  &:nth-child(-n + 4) {
-    margin-right: 8px;
-  }
-  @media screen and (max-width: 767px) {
-    &:nth-child(n + 4) {
+  @media screen and (min-width: 320px) and (max-width: 489px) {
+    &:nth-child(odd) {
+      margin-right: 10px;
+    }
+    &:nth-child(n+3) {
       margin-top: 15px;
     }
   }
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      &:nth-child(n + 4) {
+        margin-top: 15px;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      &:nth-child(-n + 4) {
+        margin-right: 8px;
+      }
+    }
+  
 }
 
 .button-list__button {
