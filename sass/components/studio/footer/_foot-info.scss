@@ -21,6 +21,22 @@
     display: block;
   }
 }
+
+.footer__link {
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 0.02em;
+  transition: color 250ms $cubic;
+  text-decoration: none;
+  text-align: center;
+
+  &--animation:hover,
+  &--animation:focus {
+    color: $main-blue;
+  }
+}
+
 .foot-info__block{
   @media screen and (min-width:768px) and (max-width: 1199px) {
     display: flex;
@@ -35,15 +51,6 @@
 }
 
 .feedback-foot {
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.43;
-  letter-spacing: 0.02em;
-  transition: color 250ms $cubic;
-  text-decoration: none;
-  color: $color-text;
-
   &--animation:hover,
   &--animation:focus {
     color: $main-blue;
@@ -56,7 +63,7 @@
   margin: 0;
 }
 
-.foot-info--color {
+.foot-info--text {
   color: rgba(255, 255, 255, 0.6);
 }
 

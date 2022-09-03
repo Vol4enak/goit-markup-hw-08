@@ -3,34 +3,33 @@
 .our-team {
   padding: 60px 0;
   background-color: $btn-color;
-   @media screen and (min-width:1200px){
+  @media screen and (min-width: 1200px) {
     padding: 94px 0;
   }
 }
 
 .team-list {
- @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
   }
-  
 }
 
 .team-list__item {
-  box-shadow:$bgc-shaw;
+  box-shadow: $bgc-shaw;
   background-color: $main-white;
   border-radius: 0px 0px 4px 4px;
-  
+
   @media screen and (max-width: 767px) {
-     &:not(:last-child){
-    margin-bottom: 30px;
-  }
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
   @media screen and (min-width: 768px) {
     width: 354px;
   }
-  
+
   @media screen and (min-width: 1200px) {
     width: 270px;
   }
@@ -53,4 +52,5 @@
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  color: $color-text;
 }

@@ -25,6 +25,9 @@
   letter-spacing: 0.03em;
 
   color: $main-black;
+   @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 %container {
@@ -32,6 +35,7 @@
   margin: 0 auto;
   @media screen and (min-width: 320px) {
     width: 320px;
+    width: 100%;
   }
   @media screen and (min-width: 480px) {
     width: 480px;

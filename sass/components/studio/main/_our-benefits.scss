@@ -35,7 +35,10 @@
   line-height: 1.43;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-align: center;
+  @media screen and (max-width:1199px) {
+  text-align: center;  
+  }
+  
 }
 
 .our-benefits__text {
