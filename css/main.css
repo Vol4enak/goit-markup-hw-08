@@ -357,8 +357,8 @@ address {
 .title {
   margin-bottom: 30px;
   font-weight: 700;
-  font-size: 28px;
-  line-height: 33px;
+  font-size: 36px;
+  line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -367,6 +367,13 @@ address {
 @media screen and (min-width: 1200px) {
   .title {
     margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .title {
+    font-size: 28px;
+    line-height: 33px;
   }
 }
 
@@ -1456,6 +1463,7 @@ address {
 
 /* icons-block */
 .icons-block {
+  margin-top: 16px;
   width: 206px;
   margin-left: auto;
   margin-right: auto;
@@ -1463,7 +1471,6 @@ address {
 
 /* icon-list */
 .icon-list {
-  margin-top: 16px;
   padding-bottom: 30px;
   gap: 10px;
   display: -webkit-box;

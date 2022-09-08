@@ -19,14 +19,18 @@
 %title {
   margin-bottom: 30px;
   font-weight: 700;
-  font-size: 28px;
-  line-height: 33px;
+  font-size: 36px;
+  line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
 
   color: $main-black;
-   @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
+  }
+  @media screen and (max-width: 1199px) {
+    font-size: 28px;
+    line-height: 33px;
   }
 }
 
